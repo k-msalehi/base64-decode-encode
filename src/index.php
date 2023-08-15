@@ -8,6 +8,7 @@
 </head>
 <link rel="stylesheet" href="./css/w3.css">
 <link rel="stylesheet" href="./css/highlight.js.min.css">
+<link rel="stylesheet" href="./css/style.css">
 <script src="./js/highlight.min.js"></script>
 <script src="./js/highlightjs-line-numbers.min.js"></script>
 
