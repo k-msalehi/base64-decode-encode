@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Base64 Encode/Decode</title>
+  <link rel="stylesheet" href="./css/w3.css">
+  <link rel="stylesheet" href="./css/highlight.js.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<link rel="stylesheet" href="./css/w3.css">
-<link rel="stylesheet" href="./css/highlight.js.min.css">
-<link rel="stylesheet" href="./css/style.css">
-<script src="./js/highlight.min.js"></script>
-<script src="./js/highlightjs-line-numbers.min.js"></script>
 
 <body class="w3-dark-grey">
+  <script src="./js/highlight.min.js"></script>
+  <script src="./js/highlightjs-line-numbers.min.js"></script>
   <h4 class="w3-center">Base64 Encode/Decode</h4>
   <div class="w3-section w3-content">
     <form>
