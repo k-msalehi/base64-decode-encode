@@ -17,7 +17,7 @@
   <div class="w3-section w3-content">
     <form>
       <div class="w3-section">
-        <strong>Input:</strong>
+        <b>Input:</b>
         <textarea rows="8" class="w3-input w3-light-grey w3-border" id="txtData"></textarea>
       </div>
       <input name="actionType" checked class="w3-radio" type="radio" id="btnDecode" value="Decode">
@@ -28,7 +28,8 @@
       <input class="w3-check" type="checkbox" id="showLineNum">
       <label for="showLineNum">Show Line numbers</label>
       <div class="w3-section">
-        <pre>
+        <b>Result:</b>
+        <pre id="resultContiner">
           <code contenteditable="true" id="txtResult"></code>
         </pre>
       </div>
