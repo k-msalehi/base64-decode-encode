@@ -52,6 +52,23 @@
       encode();
     }
 
+    document.getElementById('showLineNum').onchange = function () {
+      var lines = document.querySelectorAll('tr td.hljs-ln-line.hljs-ln-numbers');
+
+      if (document.getElementById('showLineNum').checked) {
+        hljs.initLineNumbersOnLoad();
+        for (var i = 0; i < lines.length; i++) {
+          lines[i].style.display = "table-cell";
+
+        }
+      } else {
+        for (var i = 0; i < lines.length; i++) {
+          lines[i].style.display = "none";
+
+        }
+      }
+    }
+
     function decodeOrEncode() {
       if (document.getElementById('btnDecode').checked) {
         decode();
