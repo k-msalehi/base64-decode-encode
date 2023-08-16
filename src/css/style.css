@@ -28,3 +28,7 @@ td.hljs-ln-line.hljs-ln-code {
 .hljs-ln-code {
   padding-left: 10px;
 }
+
+#resultContiner{
+  margin-top: -20px;
+}
