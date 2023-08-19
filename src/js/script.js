@@ -40,11 +40,7 @@ function decodeOrEncode() {
 }
 function decode() {
     document.getElementById('txtResult').textContent = '';
-    var strDataToDecode = document.getElementById('txtData').value;
-    strDecodedData = decodeURIComponent(atob(strDataToDecode).split('').map(function (c) {
-        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-    }).join(''));
-
+    strDecodedData = Base64.decode(document.getElementById('txtData').value);
     document.getElementById('txtResult').textContent = strDecodedData;
     hljs.highlightAll();
     if (document.getElementById('showLineNum').checked) {
@@ -54,13 +50,7 @@ function decode() {
 
 function encode() {
     document.getElementById('txtResult').textContent = '';
-    var strDataToEncode = document.getElementById('txtData').value;
-
-    strEncodedData = btoa(encodeURIComponent(strDataToEncode).replace(/%([0-9A-F]{2})/g,
-        function toSolidBytes(match, p1) {
-            return String.fromCharCode('0x' + p1);
-        }));
-
+    strEncodedData = Base64.encode(document.getElementById('txtData').value);
     document.getElementById('txtResult').textContent = strEncodedData;
     hljs.highlightAll();
     if (document.getElementById('showLineNum').checked) {
